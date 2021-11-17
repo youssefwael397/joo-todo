@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;1,400&display=swap");
+/* font-family: 'Fira Sans', sans-serif; */
+
+i.bi-check-circle {
+  font-size: 1.25rem;
+  /* color: #fff; */
+}
+i.bi-check-circle:hover {
+  color: #0f0;
+}
+
+td {
+  font-family: "Fira Sans", sans-serif;
+}
+.nothing {
+  font-family: "Fira Sans", sans-serif !important;
+}
