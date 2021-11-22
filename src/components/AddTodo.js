@@ -25,7 +25,8 @@ function AddTodo(props) {
 
     return (
         <form className='row m-0 input-group' onSubmit={handleSubmit}>
-            <input className='input-group-text form-control col-md-5' type="text" name="title" id="title" placeholder='Enter title' onChange={handleChange} value={todo} required />
+            <i class="bi bi-pencil-square input-group-text form-control w-10 "></i>
+            <input className='input-group-text form-control col-md-5 w-75' type="text" name="title" id="title" placeholder='Enter title' onChange={handleChange} value={todo} required />
             <input className='btn btn-primary col-md-2' type="submit" value="Add Todo" />
         </form>
     )

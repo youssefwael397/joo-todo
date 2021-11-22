@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import './TodoRow.css';
 
 function TodoRow(props) {
     const { todo, handleDelete, count , index ,setTodos} = props;
@@ -22,13 +23,12 @@ function TodoRow(props) {
             return todos
         })
     }
-
     return (
         <tr>
             <th scope="row">{count}</th>
-            <td className={todo.completed ? 'text-primary' : ''}>{todo.text}</td>
+            <td className={todo.completed ? 'text-primary' : 'text-danger'}>{todo.text}</td>
             <td><input type="checkbox" checked={isChecked} onChange={()=>handleCheckBox(isChecked, index)}/></td>
-            <td ><i className="btn text-danger bi bi-trash-fill" onClick={() => handleDelete(todo.id)}></i></td>
+            <td ><i className="text-danger bi bi-trash-fill" onClick={() => handleDelete(todo.id)}></i></td>
         </tr>
     )
 }

@@ -54,7 +54,7 @@ function TodosTable() {
                 </tbody>
             </table>
             {
-                todos < 1 ? <p className='text-center nothing'>There is nothing to do. Have fun</p> : null
+                todos < 1 ? <p className='text-center text-success nothing'>There is nothing to do. Have fun</p> : null
             }
 
             <AddTodo todos={todos} setTodos={setTodos} todo={todo} setTodo={setTodo} />
